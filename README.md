@@ -85,7 +85,7 @@ List<E> initialList;
 Initial list
   
 ```dart 
-Equalizer equals; 
+Equalizer<E> equals;
 ```   
 
 Compares items for equality, by default it uses the `==` operator, it's **critical** this works properly.    
@@ -93,7 +93,7 @@ Compares items for equality, by default it uses the `==` operator, it's **critic
 `Equalizer` is function, that, given two items of the same type, returns true if they are equal, false otherwise  
     
 ```dart 
-typedef bool Equalizer(dynamic item1, dynamic item2); 
+typedef bool Equalizer<E>(E item1, E item2);
 ```    
 
  You can check the [Animated List Documentation](https://docs.flutter.io/flutter/widgets/AnimatedList-class.html) for the rest:    

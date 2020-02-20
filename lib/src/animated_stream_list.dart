@@ -18,7 +18,7 @@ class AnimatedStreamList<E> extends StatefulWidget {
   final ScrollPhysics scrollPhysics;
   final bool shrinkWrap;
   final EdgeInsetsGeometry padding;
-  final Equalizer equals;
+  final Equalizer<E> equals;
   final Duration duration;
 
   AnimatedStreamList(
